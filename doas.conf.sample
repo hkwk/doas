@@ -1,0 +1,9 @@
+# Sample doas.conf
+# Allow user 'alice' to run commands as root without password
+permit nopass alice as root
+
+# Allow user 'bob' to run commands as root with password
+permit bob as root
+
+# Deny all other attempts
+deny * as root
