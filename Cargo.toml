@@ -1,11 +1,20 @@
 [package]
 name = "doas"
 version = "0.1.0"
-edition = "2021"
+edition = "2024"
+authors = ["Huang Kunlun"]
+description = "A Rust implementation of doas, a minimal sudo alternative with PAM authentication"
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/hkwk/doas"
+homepage = "https://github.com/hkwk/doas"
+documentation = "https://docs.rs/doas"
+keywords = ["doas", "sudo", "pam", "authentication", "cli"]
+categories = ["command-line-utilities", "authentication"]
+rust-version = "1.92.0"
 
 [dependencies]
 clap = { version = "4.0", features = ["derive"] }
-regex = "1.10"
 
 [target.'cfg(unix)'.dependencies]
 libc = "0.2"
